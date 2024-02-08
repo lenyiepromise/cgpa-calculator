@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>CGPA Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width =device-width, initial-scale = 1.0">
+        <meta name="description" content="This calculator is a web application that calculates the Cummulative Grade Point Average of a university and college students. The user enters the courses offered with its grade point, and the grade obtained in each of those courses">
+        <link rel="stylesheet" href="css_default.css">
+        <link rel="stylesheet" href="css_tablet.css" media="screen and (max-width: 768px)">
+    </head>
+    <body>
+        <header>
+            <h1 id="logotext">CGPA CALCULATOR</h1>
+            <small id="inscription">your CGPA, your KPI</small>
+        </header>
+        <input type="reset" id="restartbtn" value="Restart Calculator">
+        <main>
+                <div id="form_calc">
+                    <form action="" id="user-input">
+                        <input type="text" id="course-code" placeholder="Course code" required> <br>
+                        <input type="text" id="credit-unit" placeholder="Credit unit" required> <br>
+                        <input type="text" id="grade-earned" placeholder="Grade earned" required> <br>
+                        <input type="button" id="addcoursebtn" value="Add">
+                    </form>
+                    <input type="submit" id="calculatebtn" value="Calculate CGPA">
+                </div>
+                <table id="course-computation" class="course-details">
+                    <tr id="thead">
+                        <th>Course Code</th>
+                        <th>Credit Units (CU)</th>
+                        <th>Grade Earned</th>
+                        <th>Grade Point (GP)</th>
+                        <th>Quality Point (CUxGP)</th>
+                    </tr>
+                    <tr id="row1">
+                        <td id="course1"></td>
+                        <td id="cu1"></td>
+                        <td id="grade1"></td>
+                        <td id="gp1"></td>
+                        <td id="qp1"></td>
+                    </tr>
+                    <tr id="row2">
+                        <td id="course2">Course 2</td>
+                        <td id="cu2"></td>
+                        <td id="grade2"></td>
+                        <td id="gp2"></td>
+                        <td id="qp2"></td>
+                    </tr>
+                    <tr id="row3">
+                        <td id="course3">Course 3</td>
+                        <td id="cu3"></td>
+                        <td id="grade3"></td>
+                        <td id="gp3"></td>
+                        <td id="qp3"></td>
+                    </tr>
+                    <tr id="row4">
+                        <td id="course4">Course 4</td>
+                        <td id="cu4"></td>
+                        <td id="grade4"></td>
+                        <td id="gp4"></td>
+                        <td id="qp4"></td>
+                    </tr>
+                    <tr id="row5">
+                        <td id="course5">Course 5</td>
+                        <td id="cu5"></td>
+                        <td id="grade5"></td>
+                        <td id="gp5"></td>
+                        <td id="qp5"></td>
+                    </tr>
+                    <tr id="row6">
+                        <td id="course6">Course 6</td>
+                        <td id="cu6"></td>
+                        <td id="grade6"></td>
+                        <td id="gp6"></td>
+                        <td id="qp6"></td>
+                    </tr>
+                    <tr id="row7">
+                        <td id="course7">Course 7</td>
+                        <td id="cu7"></td>
+                        <td id="grade7"></td>
+                        <td id="gp7"></td>
+                        <td id="qp7"></td>
+                    </tr>
+                    <tr id="row8">
+                        <td id="course8">Course 8</td>
+                        <td id="cu8"></td>
+                        <td id="grade8"></td>
+                        <td id="gp8"></td>
+                        <td id="qp8"></td>
+                    </tr>
+                    <tr id="row9">
+                        <td id="course9">Course 9</td>
+                        <td id="cu9"></td>
+                        <td id="grade9"></td>
+                        <td id="gp9"></td>
+                        <td id="qp9"></td>
+                    </tr>
+                    <tr id="row10">
+                        <td id="course10">Course 10</td>
+                        <td id="cu10"></td>
+                        <td id="grade10"></td>
+                        <td id="gp10"></td>
+                        <td id="qp10"></td>
+                    </tr>
+                </table>
+        </main>
+        <div id="output-pane">
+            <ul>
+                <li id="CUis">Total Credit Unit (TCU): </li>
+                <li id="GPAis">Total Quality Point (TQP): </ð>
+                <li id="GPAis">CGPA (TQP/TCU):  </li>
+            </ul>
+            <ul>
+                <li id="degreeclass">Degree Class:</li>
+            </ul>
+        </div>
+        <hr id="line">
+        <footer>
+            <p id="copywrite">© 2024 | PLEN ∙ <a href="#" id="privacy">Privacy Policy</a></p> 
+        </footer>
+
+        <script src="cgpacalc.js"></script>
+    </body>
+</html>
